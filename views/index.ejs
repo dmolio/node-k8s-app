@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="index.css">
+
+    <title>Be DevOps</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p><a href="/">Be DevOps</a></p>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/about">About</a></li>
+               <li><a href="/services">Services</a></li>
+               <li><a href="/portfolio">Portfolio</a></li>
+               <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <% if(typeof user !== 'undefined' && user) { %>
+            <button><a href="/logout">Logout</a></button>
+        <% } else { %>
+            <button><a href="/login">Login</a></button>
+        <% } %>
+    </header>    
+    <br>
+    <br>
+    <div class="container mt-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Deploy 3 Tier APP on K8S Cluster</h1>
+            <hr class="my-4">
+            <p>This project demonstrates how to implement login and register functionalities with Node.js and MySQL on Kubernetes Cluster </p>
+            <a class="btn btn-primary btn-lg" href="/about" role="button">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>
